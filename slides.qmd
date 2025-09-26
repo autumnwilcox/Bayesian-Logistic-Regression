@@ -65,7 +65,7 @@ format: revealjs
 - Bayesian logistic regression improves stability with small or incomplete data  
 - Incorporating priors allows better handling of uncertainty  
 - NHANES results highlight key predictors of diabetes risk  
-- Next steps: refine priors, test model on larger datasets, explore extensions  
+- Next steps: refine priors, test model on larger datasets, explore extensions    
 ---
 
 # References
