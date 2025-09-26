@@ -1,0 +1,73 @@
+---
+title: "Bayesian Logistic Regression"
+subtitle: "Fall 2025"
+author:
+  - Namita Mishra
+  - Autumn Wilcox
+  - Chad Michael Eyer
+  - Ecil Teodoro
+format: revealjs
+---
+
+# Overview
+- What is Bayesian Logistic Regression?  
+- Why use it for diabetes prediction?  
+- How can we apply it to NHANES survey data?  
+- What challenges do we face with small samples and missing data?  
+- What are our next steps as a team?  
+
+---
+
+# Introduction
+- Diabetes is a major global health burden  
+- Key risk factors: age, BMI, race, gender  
+- Early prediction supports prevention and intervention  
+- Classical logistic regression struggles with small samples, missing data, and separation  
+
+---
+
+# Introduction (cont’d)
+- Bayesian methods incorporate prior knowledge and quantify uncertainty  
+- Useful for complex, noisy, or incomplete health data  
+- Strong applications in healthcare (EHR, imaging, surveys)  
+- Our project: apply Bayesian logistic regression to NHANES data for diabetes prediction  
+
+---
+
+# Data & Preprocessing
+- NHANES survey data (2013–2014)  
+- 9,813 observations, 5 selected variables  
+- Outcome: diabetes status (0/1)  
+- Predictors: BMI, age, gender, race  
+- Listwise deletion reduced sample size  
+- Multiple imputation used to address missing data  
+
+---
+
+# Methods
+- Baseline: classical logistic regression (MLE)  
+- Main model: Bayesian logistic regression  
+- Priors applied to stabilize estimates  
+- Posterior sampling with MCMC  
+- Implemented in R (rstanarm / brms)  
+
+---
+
+# Results
+- Bayesian model produced stable estimates despite separation issues  
+- Posterior distributions provided credible intervals for coefficients  
+- Model uncertainty quantified through probability statements  
+- Performance compared to baseline logistic regression  
+
+---
+
+# Conclusions
+- Bayesian logistic regression improves stability with small or incomplete data  
+- Incorporating priors allows better handling of uncertainty  
+- NHANES results highlight key predictors of diabetes risk  
+- Next steps: refine priors, test model on larger datasets, explore extensions  
+
+---
+
+# References
+(Add references here or link a BibTeX file)
